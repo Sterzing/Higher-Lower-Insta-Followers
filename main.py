@@ -26,7 +26,7 @@ while is_game_over == False:
     print(f"Compare A: {choice_a['name']}, a {choice_a['description']}, from {choice_a['country']}")
     print(art.vs)
     print(f"Compare B: {choice_b['name']}, a {choice_b['description']}, from {choice_b['country']}")
-    guess = input("Who has more followers? Type 'A' or 'B'").upper()
+    guess = input("Who has more followers? Type 'A' or 'B': ").upper()
     if compare(choice_a, choice_b) == ask_user(guess):
         choice_a = choice_b
         choice_b = random.choice(data)
